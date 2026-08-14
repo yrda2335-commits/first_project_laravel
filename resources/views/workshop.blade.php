@@ -11,4 +11,9 @@
 <h2>Schedule</h2>
 
 <p>Date: {{ $workshop['date'] }}</p>
+<h2>Registration</h2>
+
+<x-button href="#">
+    Register Now
+</x-button>
 </x-layout>
