@@ -35,6 +35,8 @@ $workshops = [
     ],
 ];
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function () use ($workshops) {
+    return view('home', [
+        'workshops' => $workshops
+    ]);
 });
