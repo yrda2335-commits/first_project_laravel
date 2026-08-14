@@ -1,4 +1,4 @@
-@props(['active' => ''])
+@props(['active' => false])
 <a  {{ $attributes->merge([
     'class' => request()->routeIs($active) 
         ? 'px-3 py-2 rounded-lg bg-slate-700 transition'
