@@ -7,8 +7,12 @@
             'Expert Instructors' => 15,
         ];
     @endphp
-
+<div>
     @foreach ($stats as $label => $value)
-        <p>{{ $label }}: {{ $value }}</p>
+        <x-card>
+            <h2>{{ $value }}</h2>
+            <p>{{ $label }}</p>
+        </x-card>
     @endforeach
+</div>
 </x-layout>
