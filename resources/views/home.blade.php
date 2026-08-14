@@ -62,4 +62,7 @@
     </div>
 
 </section>
+<x-alert type="info">
+    New workshops are coming soon!
+</x-alert>
 </x-layout>
