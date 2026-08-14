@@ -27,6 +27,7 @@
     Workshops
 </x-nav-link>
 
+
 <x-nav-link
     href="/about"
     :active="request()->is('about')"
@@ -40,14 +41,6 @@
 >
     Contact
 </x-nav-link>
-
-    <x-nav-link href="/about">
-        About
-    </x-nav-link>
-
-    <x-nav-link href="/contact">
-        Contact
-    </x-nav-link>
 
 </div>
             </h1>
