@@ -40,11 +40,15 @@ Route::get('/', function () use ($workshops) {
         'workshops' => $workshops
     ]);
 })->name('home');
-
 Route::get('/workshops', function () use ($workshops) {
+
+    $category = request('category');
+
     return view('workshops', [
-        'workshops' => $workshops
+        'workshops' => $workshops,
+        'category' => $category
     ]);
+
 })->name('workshops');
 
 Route::get('/workshops/{id}', function ($id) use ($workshops) {
