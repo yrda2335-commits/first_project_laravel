@@ -55,5 +55,8 @@ Route::get('/workshops/{id}', function ($id) use ($workshops) {
     return view('workshop', [
         'workshop' => $workshop
     ]);
+    Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
 });
