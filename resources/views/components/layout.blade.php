@@ -17,6 +17,25 @@
             
             <h1 class="text-2xl font-bold">
                 DevPulse
+                <div class="mt-4 flex gap-2">
+
+    <x-nav-link href="/">
+        Home
+    </x-nav-link>
+
+    <x-nav-link href="/workshops">
+        Workshops
+    </x-nav-link>
+
+    <x-nav-link href="/about">
+        About
+    </x-nav-link>
+
+    <x-nav-link href="/contact">
+        Contact
+    </x-nav-link>
+
+</div>
             </h1>
 
         </div>
