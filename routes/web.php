@@ -39,3 +39,9 @@ Route::get('/', function () use ($workshops) {
         'workshops' => $workshops
     ]);
 })->name('home');
+
+Route::get('/workshops', function () use ($workshops) {
+    return view('workshops', [
+        'workshops' => $workshops
+    ]);
+})->name('workshops');
