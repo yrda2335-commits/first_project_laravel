@@ -19,9 +19,9 @@
                 DevPulse
                 <div class="mt-4 flex gap-2">
 
-    <x-nav-link href="/">
-        Home
-    </x-nav-link>
+    <x-nav-link href="/" active="home">
+    Home
+</x-nav-link>
 
     <x-nav-link href="/workshops">
         Workshops
