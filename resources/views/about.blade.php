@@ -15,4 +15,10 @@
         </x-card>
     @endforeach
 </div>
+<h2>Our Vision</h2>
+
+<p>
+    DevPulse aims to connect developers with practical workshops,
+    expert instructors, and a growing technology community.
+</p>
 </x-layout>
