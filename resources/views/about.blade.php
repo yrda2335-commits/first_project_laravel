@@ -7,7 +7,7 @@
             'Expert Instructors' => 15,
         ];
     @endphp
-<div>
+<div grid grid-cols-1 md:grid-cols-3 gap-6>
     @foreach ($stats as $label => $value)
         <x-card>
             <h2>{{ $value }}</h2>
