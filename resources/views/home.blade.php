@@ -29,7 +29,7 @@
 
         @foreach($workshops as $workshop)
 
-            <div class="bg-white rounded-xl border p-6 hover:shadow-lg transition">
+            <x-card>
 
                 <span class="text-sm text-indigo-600 font-semibold">
                     {{ $workshop['category'] }}
@@ -56,7 +56,7 @@
                     View Details
                 </a>
 
-            </div>
+            </x-card>
 
         @endforeach
 
