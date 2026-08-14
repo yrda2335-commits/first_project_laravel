@@ -51,10 +51,9 @@
                     Date: {{ $workshop['date'] }}
                 </p>
 
-                <a href="/workshops/{{ $workshop['id'] }}"
-                   class="inline-block mt-5 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
-                    View Details
-                </a>
+                <x-button href="/workshops/{{ $workshop['id'] }}">
+    View Details
+</x-button>
 
             </x-card>
 
