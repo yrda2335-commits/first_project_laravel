@@ -45,3 +45,11 @@ Route::get('/workshops', function () use ($workshops) {
         'workshops' => $workshops
     ]);
 })->name('workshops');
+
+Route::get('/workshops/{id}', function ($id) use ($workshops) {
+
+    $workshop = Arr::first($workshops, function ($item) use ($id) {
+        return $item['id'] == $id;
+    });
+
+});
