@@ -31,6 +31,9 @@
 <p class="text-sm text-slate-500">
     Date: {{ $workshop['date'] }}
 </p>
+<p class="text-sm text-slate-500">
+    Level: {{ $workshop['level'] }}
+</p>
         </x-card>
 
     @endforeach
