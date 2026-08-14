@@ -23,9 +23,9 @@
     Home
 </x-nav-link>
 
-    <x-nav-link href="/workshops">
-        Workshops
-    </x-nav-link>
+  <x-nav-link href="/workshops" active="workshops">
+    Workshops
+</x-nav-link>
 
     <x-nav-link href="/about">
         About
