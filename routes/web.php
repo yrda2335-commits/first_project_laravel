@@ -62,3 +62,8 @@ Route::get('/workshops/{id}', function ($id) use ($workshops) {
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
