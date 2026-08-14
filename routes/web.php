@@ -53,6 +53,10 @@ Route::get('/workshops/{id}', function ($id) use ($workshops) {
         return $item['id'] == $id;
     });
 
+    if (!$workshop) {
+        abort(404);
+    }
+
     return view('workshop', [
         'workshop' => $workshop
     ]);
@@ -63,23 +67,6 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
-
-Route::get('/workshops/{id}', function ($id) use ($workshops) {
-
-    $workshop = Arr::first($workshops, function ($item) use ($id) {
-        return $item['id'] == $id;
-    });
-
-    if (!$workshop) {
-        abort(404);
-    }
-
-    return view('workshop', [
-        'workshop' => $workshop
-    ]);
-
-});
