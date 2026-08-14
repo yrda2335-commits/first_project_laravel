@@ -44,9 +44,16 @@ Route::get('/workshops', function () use ($workshops) {
 
     $category = request('category');
 
+    if ($category) {
+    $workshops = array_filter($workshops, function ($workshop) use ($category) {
+        return $workshop['category'] == $category;
+    });
+}
+
     return view('workshops', [
         'workshops' => $workshops,
         'category' => $category
+        
     ]);
 
 })->name('workshops');

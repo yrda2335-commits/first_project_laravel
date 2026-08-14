@@ -19,4 +19,9 @@
 <a href="/workshops">
     Back to Workshops
 </a>
+@if ($category)
+    <p class="mb-6 text-slate-600">
+        Showing workshops in: <strong>{{ $category }}</strong>
+    </p>
+@endif
 </x-layout>
