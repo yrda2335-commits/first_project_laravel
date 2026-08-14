@@ -52,4 +52,8 @@ Route::get('/workshops/{id}', function ($id) use ($workshops) {
         return $item['id'] == $id;
     });
 
+    return view('workshop', [
+        'workshop' => $workshop
+    ]);
+
 });
