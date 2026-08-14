@@ -8,4 +8,7 @@
     <h2>Instructor Profile</h2>
 
 <p>{{ $workshop['instructor'] }}</p>
+<h2>Schedule</h2>
+
+<p>Date: {{ $workshop['date'] }}</p>
 </x-layout>
