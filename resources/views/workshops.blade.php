@@ -34,6 +34,9 @@
 <p class="text-sm text-slate-500">
     Level: {{ $workshop['level'] }}
 </p>
+<x-button href="/workshops/{{ $workshop['id'] }}">
+    View Details
+</x-button>
         </x-card>
 
     @endforeach
