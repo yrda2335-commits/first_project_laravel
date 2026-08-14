@@ -7,5 +7,28 @@
     <h1 class="text-3xl font-bold">
         All Workshops
     </h1>
+    <div class="grid md:grid-cols-3 gap-6 mt-8">
+
+    @foreach($workshops as $workshop)
+
+        <x-card>
+
+            <x-badge>
+                {{ $workshop['category'] }}
+            </x-badge>
+
+            <h2 class="text-xl font-bold mt-2">
+                {{ $workshop['title'] }}
+            </h2>
+
+            <p class="text-slate-600 mt-2">
+                {{ $workshop['description'] }}
+            </p>
+
+        </x-card>
+
+    @endforeach
+
+</div>
 
 </x-layout>
