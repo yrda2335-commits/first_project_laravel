@@ -31,9 +31,9 @@
 
             <x-card>
 
-                <span class="text-sm text-indigo-600 font-semibold">
-                    {{ $workshop['category'] }}
-                </span>
+                <x-badge>
+    {{ $workshop['category'] }}
+</x-badge>
 
                 <h3 class="text-xl font-bold mt-2">
                     {{ $workshop['title'] }}
