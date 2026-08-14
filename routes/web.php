@@ -34,9 +34,8 @@ $workshops = [
         'description' => 'Learn how to integrate AI features into modern web applications.'
     ],
 ];
-
 Route::get('/', function () use ($workshops) {
     return view('home', [
         'workshops' => $workshops
     ]);
-});
+})->name('home');
