@@ -16,4 +16,7 @@
 <x-button href="#">
     Register Now
 </x-button>
+<a href="/workshops">
+    Back to Workshops
+</a>
 </x-layout>
