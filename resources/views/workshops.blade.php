@@ -24,7 +24,13 @@
             <p class="text-slate-600 mt-2">
                 {{ $workshop['description'] }}
             </p>
+            <p class="text-sm text-slate-500 mt-4">
+    Instructor: {{ $workshop['instructor'] }}
+</p>
 
+<p class="text-sm text-slate-500">
+    Date: {{ $workshop['date'] }}
+</p>
         </x-card>
 
     @endforeach
